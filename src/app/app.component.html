@@ -1,0 +1,90 @@
+<div style="text-align: center">
+
+  <h1>Angular Learning Topic= Content Projection | ContentChild | ContentChildren </h1>
+
+  <br>
+
+  <app-counter-parent>
+
+    <app-counter name="Ram"> </app-counter>
+
+    <app-counter name="Mohan"> </app-counter>
+    
+    <app-counter name="Sohan" operation="find"> </app-counter>
+    
+    <app-counter name="Arjun" operation="filter"> </app-counter>
+    
+    <app-counter name="Arjun" operation="filter"> </app-counter>
+
+  </app-counter-parent>
+
+<br>
+
+<app-parent-color>
+
+  <br>
+
+  <b> <p appChangebgcolor> Hello World</p> </b> <br>
+
+  <b> <p appChangebgcolor> Hello World</p> </b> <br>
+
+  <b> <p appChangebgcolor> Hello World</p> </b> <br>
+
+ <br>
+
+ <div>
+
+  Change color:
+
+  <input type="radio" name="rd1" (change)="changeCls('green')"> Green
+
+  <input type="radio" name="rd1" (change)="changeCls('blue')"> Blue
+
+  <input type="radio" name="rd1" (change)="changeCls('black')"> Black
+
+
+
+</div>
+
+
+</app-parent-color>
+
+<br>
+
+
+<!-- <app-theme>
+
+    Name : <input type="text" #name />
+    Age : <input type="text" #age />
+    <br />
+    Name : <input type="text" #name />
+    Age : <input type="text" #age />
+    <br />
+    Name : <input type="text" #name />
+    Age : <input type="text" #age />
+
+    <button type="button" (click)="setTheme1()">Set Theme</button>
+</app-theme> -->
+
+<app-theme>
+  <div>
+      Name : <input type="text" #name />
+      Age : <input type="text" #age />
+  </div>
+  <div>
+      Name : <input type="text" #name />
+      Age : <input type="text" #age />
+  </div>
+  <div>
+      Name : <input type="text" #name />
+      Age : <input type="text" #age />
+  </div>
+  <button type="button" (click)="setTheme1()"  >Set Theme</button>
+</app-theme>
+
+
+
+
+<br><br><br>
+ 
+</div>
